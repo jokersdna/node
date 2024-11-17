@@ -17,12 +17,8 @@ jobs:
         run: |
           echo "${{ 'Jokers@1234' }}" | docker login -u "sravyaj" --password-stdin
 
-      - name: Build Docker image
-        run: docker build -t sravyaj/sample-node-app .
+      -name: Build Docker image
+        run: docker build -t sravyaj/sample-node:latest .
 
       - name: Push Docker image
-        run: docker push sravyaj/sample-node-app
-
-      # Step 4: Push the Docker image to Docker Hub
-      - name: Push Docker image
-        run: docker push your-dockerhub-sravyaj/sample-node:latest
+        run: docker push sravyaj/sample-node:latest
