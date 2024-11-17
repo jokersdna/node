@@ -1,0 +1,12 @@
+{
+    "name": "sample-node-app",
+    "version": "1.0.0",
+    "description": "A sample Node.js app to test GitHub Actions and Docker",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "author": "Neeraj",
+    "license": "MIT"
+  }
+  
