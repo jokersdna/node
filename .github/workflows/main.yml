@@ -15,7 +15,7 @@ jobs:
 
       - name: Log in to Docker Hub
         run: |
-          echo "${{ 'Joker@1234' }}" | docker login -u "sravyaj" --password-stdin
+          echo "${{ 'Jokers@1234' }}" | docker login -u "sravyaj" --password-stdin
 
       - name: Build Docker image
         run: docker build -t sravyaj/sample-node-app .
